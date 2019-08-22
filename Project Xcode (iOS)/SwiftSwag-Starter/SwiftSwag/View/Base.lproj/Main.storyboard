@@ -13,7 +13,6 @@
         <!--Products-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="CategoriesVC" customModule="SwiftSwag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -83,6 +82,7 @@
                         <segue destination="tHh-C7-o2c" kind="show" identifier="ProductsVC" id="aBN-aW-R3z"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1371.0144927536232" y="137.94642857142856"/>
         </scene>
@@ -120,17 +120,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="198" height="236"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hoodie01" translatesAutoresizingMaskIntoConstraints="NO" id="gyS-TR-u8E">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hoodie01" translatesAutoresizingMaskIntoConstraints="NO" id="gyS-TR-u8E">
                                                     <rect key="frame" x="8" y="55" width="182" height="103"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AHHA Hoodie Goblog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k76-tn-jZ8">
-                                                    <rect key="frame" x="10" y="174.5" width="166" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37W-6t-MSi">
+                                                    <rect key="frame" x="83" y="201" width="32" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37W-6t-MSi">
-                                                    <rect key="frame" x="10" y="202" width="32" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AHHA Hoodie Goblog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k76-tn-jZ8">
+                                                    <rect key="frame" x="16" y="175" width="166" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -138,14 +139,10 @@
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="k76-tn-jZ8" firstAttribute="centerX" secondItem="Yul-de-G7i" secondAttribute="centerX" constant="-6" id="25h-MM-DDb"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="gyS-TR-u8E" secondAttribute="trailing" id="7bB-Hj-5Lp"/>
-                                            <constraint firstItem="gyS-TR-u8E" firstAttribute="leading" secondItem="Yul-de-G7i" secondAttribute="leadingMargin" id="HoS-01-CbR"/>
-                                            <constraint firstItem="k76-tn-jZ8" firstAttribute="centerY" secondItem="Yul-de-G7i" secondAttribute="centerY" constant="67" id="PyF-7D-SlL"/>
-                                            <constraint firstItem="37W-6t-MSi" firstAttribute="centerX" secondItem="Yul-de-G7i" secondAttribute="centerX" constant="-73" id="m7k-a8-ViN"/>
-                                            <constraint firstItem="k76-tn-jZ8" firstAttribute="top" secondItem="gyS-TR-u8E" secondAttribute="bottom" constant="16.5" id="pEv-s0-DDd"/>
-                                            <constraint firstItem="gyS-TR-u8E" firstAttribute="top" secondItem="Yul-de-G7i" secondAttribute="topMargin" constant="3" id="ppD-nu-DVM"/>
-                                            <constraint firstItem="37W-6t-MSi" firstAttribute="centerY" secondItem="Yul-de-G7i" secondAttribute="centerY" constant="94.5" id="zaX-6u-Q8U"/>
+                                            <constraint firstItem="k76-tn-jZ8" firstAttribute="centerY" secondItem="Yul-de-G7i" secondAttribute="centerY" constant="67.5" id="1hs-Lq-SQL"/>
+                                            <constraint firstItem="k76-tn-jZ8" firstAttribute="centerX" secondItem="Yul-de-G7i" secondAttribute="centerX" id="4ia-Vh-wyS"/>
+                                            <constraint firstItem="37W-6t-MSi" firstAttribute="centerX" secondItem="Yul-de-G7i" secondAttribute="centerX" id="kx0-Dv-BJu"/>
+                                            <constraint firstItem="37W-6t-MSi" firstAttribute="centerY" secondItem="Yul-de-G7i" secondAttribute="centerY" constant="93.5" id="lhT-Tu-79O"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="produkImage" destination="gyS-TR-u8E" id="nwM-fA-zlT"/>
